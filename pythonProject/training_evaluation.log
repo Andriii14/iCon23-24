@@ -1,0 +1,140 @@
+2024-09-02 23:43:39,433 - INFO - 
+--- Naive_Bayes ---
+2024-09-02 23:50:29,289 - INFO - Migliori iperparametri: {'clf__alpha': 0.21247153170062907, 'features__summary__tfidf__transformer__max_features': None, 'features__tags__tfidf__transformer__max_features': 2000, 'features__title__tfidf__transformer__max_features': None}
+2024-09-02 23:50:29,289 - INFO - Miglior punteggio (accuratezza media): 0.8596732034868974
+2024-09-02 23:50:37,174 - INFO - Mean cross-validation accuracy: 0.8558256017300993
+2024-09-02 23:50:38,691 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.80      0.85       223
+           1       0.94      0.90      0.92        91
+           2       0.90      0.78      0.84        97
+           3       0.87      0.89      0.88        75
+           4       0.83      0.91      0.87       106
+           5       0.90      0.81      0.85        93
+           6       0.81      0.91      0.86        75
+           7       0.60      0.77      0.67        52
+           8       0.84      1.00      0.91        51
+           9       0.86      0.76      0.81        50
+          10       0.58      0.86      0.69        22
+          11       0.77      0.83      0.80        41
+          12       0.79      0.85      0.82        27
+          13       0.96      0.90      0.93        80
+
+    accuracy                           0.85      1083
+   macro avg       0.83      0.86      0.84      1083
+weighted avg       0.86      0.85      0.85      1083
+
+2024-09-02 23:50:38,691 - INFO - MultinomialNB Accuracy on test set: 0.8494921514312096
+2024-09-02 23:51:11,692 - INFO - 
+--- SVM ---
+2024-09-03 01:20:27,419 - INFO - Migliori iperparametri: {'clf__C': 8.800191491250908, 'clf__gamma': 'scale', 'clf__kernel': 'linear', 'features__summary__tfidf__transformer__max_features': 3000, 'features__tags__tfidf__transformer__max_features': None, 'features__title__tfidf__transformer__max_features': None}
+2024-09-03 01:20:27,419 - INFO - Miglior punteggio (accuratezza media): 0.9336900327953473
+2024-09-03 01:21:50,496 - INFO - Mean cross-validation accuracy: 0.9302218247028617
+2024-09-03 01:22:04,763 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.96      0.93       223
+           1       1.00      0.95      0.97        91
+           2       0.97      0.92      0.94        97
+           3       0.96      0.96      0.96        75
+           4       0.93      0.93      0.93       106
+           5       0.92      0.90      0.91        93
+           6       0.94      0.88      0.91        75
+           7       0.87      0.90      0.89        52
+           8       0.91      0.96      0.93        51
+           9       0.89      0.96      0.92        50
+          10       0.95      0.95      0.95        22
+          11       1.00      0.93      0.96        41
+          12       0.90      0.96      0.93        27
+          13       0.97      0.91      0.94        80
+
+    accuracy                           0.93      1083
+   macro avg       0.94      0.93      0.94      1083
+weighted avg       0.94      0.93      0.93      1083
+
+2024-09-03 01:22:04,763 - INFO - SVC Accuracy on test set: 0.9344413665743305
+2024-09-03 01:27:20,668 - INFO - 
+--- Random_Forest ---
+2024-09-03 02:19:17,434 - INFO - Migliori iperparametri: {'clf__criterion': 'gini', 'clf__max_depth': None, 'clf__min_samples_leaf': 2, 'clf__min_samples_split': 2, 'clf__n_estimators': 211, 'features__summary__tfidf__transformer__max_features': 2000, 'features__tags__tfidf__transformer__max_features': 2000, 'features__title__tfidf__transformer__max_features': 2000}
+2024-09-03 02:19:17,434 - INFO - Miglior punteggio (accuratezza media): 0.870686655364064
+2024-09-03 02:22:02,060 - INFO - Mean cross-validation accuracy: 0.8700729329364073
+2024-09-03 02:22:30,392 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.79      0.91      0.84       223
+           1       0.93      0.87      0.90        91
+           2       0.93      0.79      0.86        97
+           3       0.95      0.80      0.87        75
+           4       0.89      0.88      0.89       106
+           5       0.94      0.88      0.91        93
+           6       0.84      0.83      0.83        75
+           7       0.83      0.75      0.79        52
+           8       0.84      0.92      0.88        51
+           9       0.84      0.94      0.89        50
+          10       0.90      0.82      0.86        22
+          11       0.82      1.00      0.90        41
+          12       0.74      0.96      0.84        27
+          13       0.92      0.75      0.83        80
+
+    accuracy                           0.86      1083
+   macro avg       0.87      0.86      0.86      1083
+weighted avg       0.87      0.86      0.86      1083
+
+2024-09-03 02:22:30,392 - INFO - RandomForestClassifier Accuracy on test set: 0.8624192059095106
+2024-09-03 02:29:23,461 - INFO - 
+--- Decision_Tree ---
+2024-09-03 02:41:35,309 - INFO - Migliori iperparametri: {'clf__criterion': 'gini', 'clf__max_depth': None, 'clf__min_samples_leaf': 4, 'clf__min_samples_split': 6, 'clf__splitter': 'random', 'features__summary__tfidf__transformer__max_features': 3000, 'features__tags__tfidf__transformer__max_features': 2000, 'features__title__tfidf__transformer__max_features': 2000}
+2024-09-03 02:41:35,309 - INFO - Miglior punteggio (accuratezza media): 0.8371089366208777
+2024-09-03 02:41:55,123 - INFO - Mean cross-validation accuracy: 0.8404210442002963
+2024-09-03 02:41:58,194 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.84      0.82       223
+           1       0.88      0.89      0.89        91
+           2       0.86      0.77      0.82        97
+           3       0.82      0.91      0.86        75
+           4       0.82      0.79      0.80       106
+           5       0.93      0.75      0.83        93
+           6       0.78      0.79      0.78        75
+           7       0.84      0.79      0.81        52
+           8       0.82      0.90      0.86        51
+           9       0.90      0.94      0.92        50
+          10       0.86      0.82      0.84        22
+          11       0.80      0.88      0.84        41
+          12       0.87      0.96      0.91        27
+          13       0.74      0.72      0.73        80
+
+    accuracy                           0.83      1083
+   macro avg       0.84      0.84      0.84      1083
+weighted avg       0.83      0.83      0.83      1083
+
+2024-09-03 02:41:58,194 - INFO - DecisionTreeClassifier Accuracy on test set: 0.8282548476454293
+2024-09-03 02:43:01,408 - INFO - 
+--- Logistic_Regression ---
+2024-09-03 03:22:57,633 - INFO - Migliori iperparametri: {'clf__C': 58.974168514283754, 'clf__max_iter': 696, 'clf__penalty': 'l2', 'clf__solver': 'lbfgs', 'features__summary__tfidf__transformer__max_features': None, 'features__tags__tfidf__transformer__max_features': None, 'features__title__tfidf__transformer__max_features': 1000}
+2024-09-03 03:22:57,633 - INFO - Miglior punteggio (accuratezza media): 0.9325309375375457
+2024-09-03 03:24:04,424 - INFO - Mean cross-validation accuracy: 0.9312236624882638
+2024-09-03 03:24:13,435 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94       223
+           1       1.00      0.93      0.97        91
+           2       0.97      0.90      0.93        97
+           3       0.96      0.97      0.97        75
+           4       0.93      0.90      0.91       106
+           5       0.97      0.91      0.94        93
+           6       0.92      0.88      0.90        75
+           7       0.84      0.94      0.89        52
+           8       0.89      0.96      0.92        51
+           9       0.87      0.96      0.91        50
+          10       0.95      0.95      0.95        22
+          11       0.98      1.00      0.99        41
+          12       0.93      0.96      0.95        27
+          13       0.96      0.94      0.95        80
+
+    accuracy                           0.94      1083
+   macro avg       0.94      0.94      0.94      1083
+weighted avg       0.94      0.94      0.94      1083
+
+2024-09-03 03:24:13,435 - INFO - LogisticRegression Accuracy on test set: 0.9362880886426593

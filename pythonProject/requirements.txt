@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+selenium
+nltk
+spacy
+imbalanced-learn
+pyswip
+scipy
+kneed
+tqdm
+joblib
